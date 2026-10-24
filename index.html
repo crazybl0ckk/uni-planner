@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Uni Planner</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <h1>Today</h1>
+  <div id="today"></div>
+  <h1>Assignments</h1>
+  <form id="form">
+    <input id="title" placeholder="Title" required>
+    <select id="course"></select>
+    <input id="due" type="date" required>
+    <button>Add</button>
+  </form>
+  <ul id="list"></ul>
+  <h1>Exams</h1>
+  <form id="examForm">
+    <select id="examCourse" required></select>
+    <input id="examDate" type="date" required>
+    <input id="examTime" type="time">
+    <input id="examVenue" placeholder="Venue">
+    <button>Add</button>
+  </form>
+  <ul id="examList"></ul>
+  <h1>Timetable</h1>
+  <form id="classForm">
+    <select id="classCourse" required></select>
+    <select id="classDay">
+      <option>Sunday</option>
+      <option>Monday</option>
+      <option>Tuesday</option>
+      <option>Wednesday</option>
+      <option>Thursday</option>
+    </select>
+    <input id="classStart" type="time" required>
+    <input id="classEnd" type="time" required>
+    <input id="classRoom" placeholder="Room">
+    <button>Add</button>
+  </form>
+  <div id="timetable"></div>
+  <script src="app.js"></script>
+</body>
+
+</html>
